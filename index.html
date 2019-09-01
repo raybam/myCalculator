@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculatorstyle.css">
+</head>
+<body>
+<div class="container">
+  <form name="inputForm">
+	<input type="text" name="textview" class="textarea" disabled>
+  </form>
+  <table>
+  <tr>
+  	<td><input type="button" class="button number" value="9" onclick="insertNum(9)"></td>
+  	<td><input type="button" class="button number" value="8" onclick="insertNum(8)"></td>
+  	<td><input type="button" class="button number" value="7" onclick="insertNum(7)"></td>
+  	<td><input type="button" class="button symbol" value="-" onclick="insertOp('-')"></td>
+  </tr>
+   <tr>
+  	<td><input type="button" class="button number" value="6" onclick="insertNum(6)"></td>
+  	<td><input type="button" class="button number" value="5" onclick="insertNum(5)"></td>
+  	<td><input type="button" class="button number" value="4" onclick="insertNum(4)"></td>
+  	<td><input type="button" class="button symbol" value="x" onclick="insertOp('*')"></td>
+  </tr>
+   <tr>
+  	<td><input type="button" class="button number" value="3" onClick="insertNum(3)"></td>
+  	<td><input type="button" class="button number" value="2" onClick="insertNum(2)"></td>
+  	<td><input type="button" class="button number" value="1" onClick="insertNum(1)"></td>
+  	<td><input type="button" class="button symbol" value="/" onClick="insertOp('/')"></td>
+  </tr>
+   <tr>
+  	<td><input type="button" class="button number" value="0" onClick="insertNum(0)"></td>
+  	<td><input type="button" class="button symbol" value="." onClick="insertDec()"></td>
+  	<td><input type="button" class="button symbol" value="x²" onClick="SquareRoot('square')" id="square" disabled></td>
+  	<td><input type="button" class="button symbol" value="+" onClick="insertOp('+')"></td>
+  </tr>
+   <tr>
+  	<td><input type="button" class="button symbol" value="CR" onClick="clean()"></td>
+  	<td><input type="button" class="button symbol" value="<<" onClick="back()"></td>
+  	<td><input type="button" class="button symbol" value="=" onClick="equalTo()"></td>
+  	<td><input type="button" class="button symbol" value="&radic;" onClick="SquareRoot('root')" id="root" disabled></td>
+  </table>
+
+</div>
+<script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>
